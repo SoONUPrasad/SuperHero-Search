@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --poppins-font: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.container {
+  margin: 20px 50px;
+}
+a {
+  cursor: pointer;
+}
+.btn,
+.fav-btn,
+.fav-btn i {
+  cursor: pointer;
+}
+
+.navbar-brand a span {
+  color: red;
+}
+
+.cards-container {
+  justify-content: space-evenly;
+  /* height: 100%; */
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.character-info .btn {
+  width: 100%;
+}
+
+.card {
+  /* background-color: hsla(0, 0%, 100%, 0.62); */
+  font-family: var(--poppins-font);
+  height: 484px;
+  width: 250px;
+  margin: 40px 25px;
+  text-align: center;
+  border-radius: 20px;
+  gap: 4px;
+  z-index: 2;
+  backdrop-filter: blur(3px);
+  border: 5px solid red;
+  padding: 5px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.remove-btn,
+.remove-btn i {
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+}
+
+.remove-toast {
+  height: auto;
+}
+
+.no-characters {
+  font-size: 35px;
+  color: var(--text-color);
+}
